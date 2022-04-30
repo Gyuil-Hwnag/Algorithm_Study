@@ -9,6 +9,7 @@ plus_two = lambda x: x+2
 print(plus_two(1))
 
 a = [1, 2, 3]
+
 # map(함수, 값)
 print(list(map(plus_one, a)))
 

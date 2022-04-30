@@ -6,7 +6,6 @@
 #         print("Second", end=' ')
 #     print()
 
-# 별 찍기
 for i in range(5):
     for j in range(5-i):
         print("*", end=' ')

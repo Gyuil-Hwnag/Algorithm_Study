@@ -50,13 +50,15 @@ print(min(a))
 print(min(7, 5))
 print(min('A', 'Z'))
 
-# shuffle, sort
+# shuffle, sort, reverse
 r.shuffle(a)
 print(a)
 
+# 오름차순
 a.sort()
 print(a)
 
+# 내림차순
 a.sort(reverse=True)
 print(a)
 
