@@ -1,4 +1,4 @@
-# Algorithm_Study
+# Algorithm_Study(Python)
 1. Chap1
 - Python 기본 문법
 2. Chap2
