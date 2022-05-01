@@ -15,13 +15,12 @@ def kST(s, e, k):
 kST(1,4,2)
 
 # 해설
-T = a
+T = int(input())
 def kST():
     for t in range(T):
         n, s ,e , k = map(int, input().split())
         a = list(map(int, input().split()))
         a = a[s-1:e]
         a.sort()
-        print(a[k-1])
-
-kST()
+        print("#%d %d" %(t+1, a[k-1]))
+ 
