@@ -1,4 +1,4 @@
-# Algorithm_Study
+# Algorithm_Study(Python)
 1. Chap1
 - Python 기본 문법
 2. Chap2
@@ -8,3 +8,6 @@
 - 최솟값
 - 대표값
 - 정다면체
+- 자릿수의 합
+- 소수(에라토스테네스 체)
+- 뒤집은 소수
