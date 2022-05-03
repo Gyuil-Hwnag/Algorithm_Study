@@ -26,6 +26,7 @@ print(result)
 # 해설
 a = list(map(int, input().split()))
 
+# 해설1
 # def digit_sum(x):
 #     sum = 0
 #     while x>0:
@@ -33,6 +34,7 @@ a = list(map(int, input().split()))
 #         x = x//10
 #     return sum
 
+# 해설2
 def digit_sum(x):
     sum = 0
     for i in str(x):

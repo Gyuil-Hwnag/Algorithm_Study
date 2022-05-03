@@ -3,23 +3,23 @@
 # 만약 20이 입려고디면 1부터 20까지의 소수는 2, 3, 5, 7, 11, 13, 17, 19 이렇게 총 8개 이다.
 
 # 나의 풀이
-# def eratos(x):
-#     res = [0]*(x+1)
-#     for i in range(2, x+1):
-#         count = 1
-#         while i*count < x+1:
-#             res[i] = res[i]+1
-#             count += 1
+def eratos(x):
+    res = [0]*(x+1)
+    for i in range(2, x+1):
+        count = 1
+        while i*count < x+1:
+            res[i] = res[i]+1
+            count += 1
 
-#     # 0,1 이 있으므로 -2
-#     result = -2
-#     for i in res:
-#         if i == 1:
-#             result += 1
+    # 0,1 이 있으므로 -2
+    result = -2
+    for i in res:
+        if i == 1:
+            result += 1
 
-#     print(result)
+    print(result)
 
-# eratos(20)
+eratos(20)
 
 # 해설
 n = int(input())

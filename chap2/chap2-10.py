@@ -16,7 +16,7 @@ def price(a, b, c):
         return a*1000+10000
     elif a == b or a == c:
         return a*100+1000
-    elif b ==c:
+    elif b == c:
         return b*100+1000
     else:
         return max(a,b,c)*100
@@ -31,7 +31,19 @@ print(max(result))
 
 # 해설
 n = int(input())
+res = 0
 for i in range(n):
     tmp = input().split()
     tmp.sort()
     a, b ,c = map(int, tmp)
+    if a==b and b==c:
+        money = 10000+(a*1000)
+    elif a==b or b==c:
+        money = b*100+1000
+    elif a==c:
+        money = a*100+1000
+    else:
+        money = c*100
+    if money>res:
+        res = money
+print(res)
