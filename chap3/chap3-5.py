@@ -19,7 +19,6 @@ for i in range(len(num)):
             break
         elif sum == n:
             count+=1
-            print("%d %d" %(i, j))
             break
 
 print(count)

@@ -25,7 +25,7 @@ def reverCard(a, b):
     for i in range(a-1,b):
         card[i] = before[i-(a-1)]
 
-for i in range(10):
+for _ in range(10):
     a, b = input().split()
     reverCard(a, b)
     print(card)
@@ -33,3 +33,16 @@ for i in range(10):
 print(card)
 
 # 해설
+# a, b = map(int, input().split())
+# a , b = b, a # swap 방법 알아두기
+a = list(range(1, 21))
+
+for _ in range(10):
+    s, e = map(int, input().split())
+    for i in range((e-s+1)//2):
+        a[s+i], a[e-i] = a[e-i], a[s+i]
+
+a.pop(0)
+
+for x in a:
+    print(x, end=' ')

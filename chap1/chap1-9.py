@@ -1,8 +1,4 @@
 # 리스트와 내장함수(2)
-
-from numpy import sometrue
-
-
 a = [23, 12, 36, 53, 19]
 
 print(a)
