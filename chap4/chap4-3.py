@@ -50,6 +50,7 @@ print(res)
 # 해설
 n, m = map(int, input().split())
 Music = list(map(int, input().split()))
+maxx = max(Music)
 
 def Count(capacity):
     cnt=1
@@ -67,7 +68,7 @@ rt = sum(Music)
 res = 0
 while lt<=rt:
     mid = (lt+rt)//2
-    if Count(mid)<=m:
+    if mid >= maxx and Count(mid)<=m:
         res=mid
         rt=mid-1
     else:
