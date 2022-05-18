@@ -8,3 +8,16 @@
 # 후위순회 출력 : 4 5 2 6 7 3 1
 
 # 내 풀이
+def DFS(v):
+    if v>7:
+        return
+    else:
+        # 전위순회
+        # print(v, end=' ')
+        DFS(v*2)
+        # 중위순회
+        # print(v, end=' ')
+        DFS(v*2+1)
+        # 후위순회
+        # print(v, end=' ')
+DFS(1)
