@@ -25,7 +25,7 @@
 
 # 내풀이
 n, m = map(int, input().split())
-graph = [[0]*n]*n
+graph =[[0]*(n+1) for _ in range(n+1)]
 for i in range(m):
     num = map(int, input().split())
     graph[num[0]-1][num[1]-1] = num[2]

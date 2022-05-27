@@ -10,7 +10,7 @@ a=list(range(1, n+1))
 
 cnt = 0
 
-# 조합으로 사용시 it.permutations(a, n)
+# it.permutations(a, n)
 for tmp in it.permutations(a):
     sum = 0
     for L, x in enumerate(tmp):
