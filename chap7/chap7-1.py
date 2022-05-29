@@ -55,7 +55,6 @@ DFS(0, 0)
 print(max)
 
 # 해설
-
 def DFS(L, sum, time):
     global res
     if time > m:
