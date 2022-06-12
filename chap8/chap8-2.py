@@ -1,4 +1,4 @@
-# 동적계획법이란? 네트워크 선 자르기(Bottom-Up)
+# 네트워크 선 자르기(Top-Down : 재귀, 메모이제이션)
 
 # 현수는 네트워크선을 1m, 2m의 길이를 갖는 선으로 자르려고 한다.
 # 예를 들어 4m의 네트워크선이 주어진다면
@@ -15,29 +15,33 @@
 # 첫째줄에 네트워크선의 총 길이인 자연수 N이 주어진다.
 # 21
 
-# 출력설명
-# 첫번째 줄에 부분증가수열의 최대길이를 출력한다.
-# 7
-
 # 내풀이
 n = int(input())
-num = [0]*(n+1)
+
 def DFS(L):
-    if L>n:
+    if L<0:
         return 0
-    elif L==n:
+    elif L==0:
         return 1
     else:
-        return DFS(L+1)+DFS(L+2)
+        return DFS(L-1)+DFS(L-2)
 
-res = DFS(0)
+res = DFS(n)
 print(res)
 
 # 해설
-n=int(input())
-dy=[0]*(n+1)
-dy[1]=1
-dy[2]=2
-for i in range(3, n+1):
-    dy[i]=dy[i-1]+dy[i-2]
-print(dy[n])
+# dy 로 기록해주기 (메모리제이션) <- 안한다면 그냥 재귀 (속도차이 엄청남)
+def DFS(len):
+    # 이부분 꼭 해주기, 안하면 속도 엄청 느려짐
+    if dy[len]>0:
+        return dy[len]
+    if len==1 or len==2:
+        return len
+    else:
+        dy[len]=DFS(len-1)+DFS(len-2)
+        return dy[len]
+
+if __name__ == "__main__":
+    n=int(input())
+    dy=[0]*(n+1)
+    print(DFS(n))
