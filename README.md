@@ -82,3 +82,8 @@
 - 피자 배달 거리(DFS 활용 : 삼성 SW역량평가 기출문제)
 - 버블정렬
 - 퀵정렬
+8. Chap8 (Dynamic Programming 동적 계획법)
+- 네트워크 선 자르기(Bottom-Up)
+- 네트워크 선 자르기(Top-Down: 재귀, 메모이제이션)
+- 도전과제: 계단 오르기(Top-Down: 메모이제이션)
+- 도전과제: 돌다리 건너기(Bottom-Up)
