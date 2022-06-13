@@ -89,4 +89,4 @@
 - 도전과제: 돌다리 건너기(Bottom-Up)
 - 최대 부분 증가수열(LIS: Longest Increasing Subsequence)
 - 최대 선 연결하기(LIS 응용)
-- 가장 높은 탑 쌓기(LIS)
+- 가장 높은 탑 쌓기(LIS 응용)
