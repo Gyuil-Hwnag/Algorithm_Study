@@ -90,3 +90,7 @@
 - 최대 부분 증가수열(LIS: Longest Increasing Subsequence)
 - 최대 선 연결하기(LIS 응용)
 - 가장 높은 탑 쌓기(LIS 응용)
+- 알리바바와 40인의 도둑(Bottom-Up)
+- 알리바바와 40인의 도둑(Top-Down)
+- 가방문제(냅색 알고리즘)
+- 동전교환(냅색 알고리즘)
